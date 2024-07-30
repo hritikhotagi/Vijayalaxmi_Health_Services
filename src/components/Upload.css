@@ -1,0 +1,17 @@
+.upload-container {
+    padding: 20px;
+  }
+  
+  .upload-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .upload-container .form-control {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .upload-container .btn {
+    margin-top: 20px;
+  }
+  

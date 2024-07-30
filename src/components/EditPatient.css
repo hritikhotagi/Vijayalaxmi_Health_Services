@@ -1,0 +1,26 @@
+.edit-container {
+    padding: 20px;
+  }
+  
+  .edit-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .edit-container .form-label {
+    margin-bottom: 10px;
+  }
+  
+  .edit-container .form-control {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .edit-container .img-thumbnail {
+    max-width: 100px;
+    margin: 5px;
+  }
+  
+  .edit-container .btn {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,48 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .home-container .btn {
+    margin: 10px 0;
+  }
+  
+  .home-container table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .home-container table, th, td {
+    border: 1px solid black;
+  }
+  
+  .home-container th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .home-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .logout{
+    
+  }
+
+  .subtitle{
+    text-align: left;
+  }
+
+  .nav{
+    width: 100%;
+  }
+
+  .features{
+    width: 100%;
+  }
+
+  .btn-success{
+    background-color: rgb(34, 34, 115);
+  }

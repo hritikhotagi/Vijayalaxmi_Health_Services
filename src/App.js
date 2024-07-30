@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { AuthProvider, AuthContext } from './AuthContext';
+import AdminLogin from './components/AdminLogin';
+import Home from './components/Home';
+import PatientDetails from './components/PatientDetails';
+import Upload from './components/Upload';
+import EditPatient from './components/EditPatient';
+import './styles.css';
+
+const PrivateRoute = ({ children }) => {
+  const { isAuthenticated } = useContext(AuthContext);
+  return isAuthenticated ? children : <Navigate to="/" />;
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<AdminLogin />} />
+          <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
+          <Route path="/patient/:id" element={<PrivateRoute><PatientDetails /></PrivateRoute>} />
+          <Route path="/upload" element={<PrivateRoute><Upload /></PrivateRoute>} />
+          <Route path="/edit/:id" element={<PrivateRoute><EditPatient /></PrivateRoute>} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

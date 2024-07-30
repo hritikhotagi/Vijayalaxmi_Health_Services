@@ -1,0 +1,23 @@
+.details-container2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .details-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .details-container p {
+    margin: 10px 0;
+  }
+  
+  .details-container img {
+    max-width: 100px;
+    margin: 5px;
+  }
+  
+  .details-container .btn {
+    margin-top: 20px;
+  }
+  
