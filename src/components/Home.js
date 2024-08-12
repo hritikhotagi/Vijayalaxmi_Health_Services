@@ -4,7 +4,6 @@ import { AuthContext } from '../AuthContext';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MdOutlineLogout } from "react-icons/md";
-import img from '../assets/img.png';
 
 
 function Home() {

@@ -34,8 +34,8 @@ function PatientDetails() {
           ))}
         </div>
       )}
-      <button className="btn btn-primary mt-3" onClick={() => navigate('/home')}>Back to Home</button>
-      <button className="btn btn-secondary mt-3 ms-2" onClick={() => navigate(`/edit/${id}`)}>Edit</button>
+      <button className="btn btn-primary mt-3 ms-2" onClick={() => navigate(`/edit/${id}`)}>Edit</button>
+      <button className="btn btn-secondary mt-3" onClick={() => navigate('/home')}>Back</button>
     </div>
   );
 }
